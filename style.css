@@ -30,11 +30,12 @@ body{
     box-shadow: 0 0 1rem(0,0,0,0.3);
     font-size: 8vmin;
     color: #b0413e;
+    background-color: edddd4;
 }
 #reset-btn{
     padding: 1rem;
     font-size: 1.3rem;
-    background-color:slateblue;
+    background-color:231942;
     color: #fff;
     border-radius: 1rem;
 }
