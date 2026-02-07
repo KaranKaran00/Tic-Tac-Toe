@@ -39,3 +39,10 @@ body{
     color: #fff;
     border-radius: 1rem;
 }
+#new-btn{
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color:5a189a;
+    color: #fff;
+    border-radius: 1rem;
+}
