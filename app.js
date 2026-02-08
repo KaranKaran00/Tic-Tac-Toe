@@ -31,9 +31,8 @@ boxes.forEach((box) =>{
     });
 });
 
-const showWinner = (Winner) =>{
-    msg.innerText = `Congratulations, Winner is ${winner}`;
-}
+// const showWinner = (Winner) =>{   
+// }
 
 const checkWinner = () =>{
     for(let pattern of winPatterns){
@@ -45,8 +44,10 @@ const checkWinner = () =>{
         {
             if(pos1Val === pos2Val && pos2Val === pos3Val)
             {
-                showWinner(alert("Winner"));
+                alert(`Congratulations, Winner is ${pos1Val}`);
+                //showWinner(alert("Winner" ,pos1Val));
                 console.log("Winner");
+                //document.write(pos1Val);
                 //alert("Winner");
             };
         }
