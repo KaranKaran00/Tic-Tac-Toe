@@ -72,6 +72,7 @@ const checkWinner = () =>{
                 disableBoxes();
                 //document.write(pos1Val);
                 //alert("Winner");
+                return;
             };
         }
     }
