@@ -3,7 +3,7 @@ let resetBtn = document.querySelector("#reset-btn");
 let newGameBtn = document.querySelector("#new-btn");
 
 let turn0 = true;
-
+let count = 0;
 const winPatterns=[
     [0, 1, 2],
     [0, 3, 6],
@@ -17,12 +17,17 @@ const winPatterns=[
 
 const resetGame =()=>{
     turn0 =true;
+    count = 0;
     enableBoxes();
 }
 
 boxes.forEach((box) =>{
     box.addEventListener("click",() =>{
+
+        count++;
         console.log("box was clicked");
+        console.log(count);
+
         if(turn0){
             box.innerText ="O";
             turn0=false;
@@ -30,6 +35,7 @@ boxes.forEach((box) =>{
             box.innerText="X";
             turn0=true;
         }
+       // drow.addEventListener("click",)
         box.disabled =true;
 
         checkWinner();
@@ -69,7 +75,13 @@ const checkWinner = () =>{
             };
         }
     }
+    
+    if(count === 9)
+    {
+        alert("It Draw!");
+    }
 };
 
 newGameBtn.addEventListener("click",resetGame);
 resetBtn.addEventListener("click",resetGame);
+//drow.addEventListener("click",resetGame);
