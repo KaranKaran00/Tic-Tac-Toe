@@ -1,8 +1,11 @@
 # Tic-Tac-Toe
 Game Tic Tac toe 
-
+***
 Click here [http://127.0.0.1:5500/ ](https://karankaran00.github.io/Tic-Tac-Toe/)
+***
 
 <img src="image/Screenshot (163).png" >
+
 <img src="image/Screenshot (162).png" >
+
 <img src="image/Screenshot (164).png" >
